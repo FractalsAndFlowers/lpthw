@@ -1,6 +1,7 @@
 # Study Drill
 # Write a script similar to the last exercise that uses read and argv to read
 # the file you just created
+# Use strings, formats, and escapes to print out line1-3 with just one target.write() command instead of six.
 
 from sys import argv
 
@@ -32,12 +33,7 @@ line3 = input("Line 3: ")
 
 print("I'm going to write these to the files.")
 
-target.write(line1)
-target.write("\n")
-target.write(line2)
-target.write("\n")
-target.write(line3)
-target.write("\n")
+target.write(f"{line1}\n{line2}\n{line3}\n")
 
 print("And finally, we close it.")
 target.close()
